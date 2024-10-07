@@ -45,9 +45,15 @@ function getAvailableFeelings(arg1) {
 
 console.log(getAvailableFeelings());
 console.log(giveAdvice("encarlizado"));
+console.log(giveAdvice("tristeza"));
+console.log(giveAdvice("felicidad"));
+console.log(giveAdvice("optimismo"));
+console.log(giveAdvice("ira"));
 
 // anadir consejos validos
 //crear un repository en github
 //conectar con el repositorio local
 //guardar cambios y push repository
 //enviar el link.
+
+//https://github.com/DavidSerranoReyes/tupana
