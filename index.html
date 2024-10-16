@@ -6,20 +6,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emociones Tupana</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos para centrar imágenes y añadir espacio */
+        main {
+            display: flex; /* Usar Flexbox */
+            justify-content: center; /* Centrar horizontalmente */
+            flex-wrap: wrap; /* Permitir que las imágenes se envuelvan */
+            margin-top: 20px; /* Espacio arriba */
+        }
+        img {
+            margin: 10px; /* Espacio entre imágenes */
+            width: 450px; /* Ancho fijo de las imágenes */
+            height: auto; /* Mantener la relación de aspecto */
+            cursor: pointer; /* Cambiar el cursor al pasar sobre la imagen */
+            transition: transform 0.3s; /* Efecto de transición */
+        }
+        img:hover {
+            transform: scale(1.1); /* Efecto al pasar el mouse sobre la imagen */
+        }
+       /* Estilos para la ventana modal */
+        .modal {
+            display: none; /* Ocultarla inicialmente */
+            position: fixed; /* Posicionarla en la pantalla */
+            z-index: 1000; /* Asegurarse de que esté encima de otros elementos */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+        }
+        .modal-content {
+            background-color: white;
+            margin: 15% auto; /* Centrando */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; /* Ancho de la ventana */
+            max-width: 400px; /* Ancho máximo */
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Feelings</h1>
     </header>
     <main>
-        <img src="resources/optimismo.webp" alt="Optimismo">
-        <img src="resources/felicidad.webp" alt="Felicidad">
-        <img src="resources/ansiedad.webp" alt="Ansiedad">
-        <img src="resources/tristeza.webp" alt="Tristeza">
+        <img src="resources/optimismo.webp" alt="Optimismo" onclick="mostrarMensaje('Optimismo: Una sensación de confianza y esperanza.')">
+        <img src="resources/felicidad.webp" alt="Felicidad" onclick="mostrarMensaje('Felicidad: Un estado de satisfacción y alegría.')">
+        <img src="resources/ansiedad.webp" alt="Ansiedad" onclick="mostrarMensaje('Ansiedad: Una reacción emocional normal ante situaciones de estrés.')">
+        <img src="resources/tristeza.webp" alt="Tristeza" onclick="mostrarMensaje('Tristeza: Una emoción que refleja el descontento o la pérdida.')">
+        
     </main>
+  <!-- Ventana modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="cerrarMensaje()">&times;</span>
+        <p id="mensajeModal" style="color: black;"></p> 
+    </div>
+</div>
+
     <footer>
         <p>&copy; 2024 Emociones Tupana</p>
     </footer>
     <script src="tupana.js"></script>
+
+    <script>
+        function mostrarMensaje(texto) {
+            document.getElementById("mensajeModal").innerText = texto;
+            document.getElementById("myModal").style.display = "block"; // Mostrar la ventana modal
+        }
+        function cerrarMensaje() {
+            document.getElementById("myModal").style.display = "none"; // Ocultar la ventana modal
+        }
+
+        // Cerrar la modal cuando se hace clic fuera de ella
+        window.onclick = function(event) {
+            const modal = document.getElementById("myModal");
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
 </body>
 </html>
