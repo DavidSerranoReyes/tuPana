@@ -57,3 +57,19 @@ console.log(giveAdvice("ira"));
 //enviar el link.
 
 //https://github.com/DavidSerranoReyes/tupana
+
+function mostrarMensaje(texto) {
+  document.getElementById("mensajeModal").innerText = texto;
+  document.getElementById("myModal").style.display = "block"; // Mostrar la ventana modal
+}
+function cerrarMensaje() {
+  document.getElementById("myModal").style.display = "none"; // Ocultar la ventana modal
+}
+
+// Cerrar la modal cuando se hace clic fuera de ella
+window.onclick = function(event) {
+  const modal = document.getElementById("myModal");
+  if (event.target === modal) {
+      modal.style.display = "none";
+  }
+};
