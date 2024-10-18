@@ -1,5 +1,5 @@
 
-<em> # tuPana </em># 
+<em> ## tuPana </em>##
 
 Nombre del Proyecto: Tu Pana
 
@@ -35,3 +35,6 @@ Objetivo: El objetivo de tuPana es empoderar a las personas para que reconozcan,
 
 Impacto Esperado: Esperamos que esta app contribuya a una mayor conciencia emocional, reduzca el estigma asociado a la búsqueda de apoyo psicológico y mejore la calidad de vida de los usuarios.
 
+## Autores
+David Serrano 
+Alvaro Troya 
