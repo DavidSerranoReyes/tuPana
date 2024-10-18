@@ -1,8 +1,10 @@
 
-# tuPana
-
+<em> # tuPana </em># 
 
 Nombre del Proyecto: Tu Pana
+
+Estado del Proyecto:
+:construction: Proyecto en construcción :construction:
 
 Descripción General: Tu Pana es una aplicación innovadora diseñada para brindar apoyo emocional a las personas en momentos de necesidad. Su objetivo es ayudar a los usuarios a identificar y comprender sus emociones a través de una interfaz interactiva y accesible. La app utiliza imágenes, ejercicios de reflexión y recomendaciones personalizadas para guiar a los usuarios en su proceso emocional.
 
@@ -29,7 +31,7 @@ Notificaciones de Bienestar:
 Acceso a Profesionales:
         Opción de conectarse con terapeutas o consejeros a través de la app para apoyo adicional.
 
-Objetivo: El objetivo de EmotiConnect es empoderar a las personas para que reconozcan, comprendan y gestionen sus emociones de manera efectiva, promoviendo el bienestar mental y emocional en la vida diaria.
+Objetivo: El objetivo de tuPana es empoderar a las personas para que reconozcan, comprendan y gestionen sus emociones de manera efectiva, promoviendo el bienestar mental y emocional en la vida diaria.
 
 Impacto Esperado: Esperamos que esta app contribuya a una mayor conciencia emocional, reduzca el estigma asociado a la búsqueda de apoyo psicológico y mejore la calidad de vida de los usuarios.
 
