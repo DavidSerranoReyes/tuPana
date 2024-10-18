@@ -1,14 +1,15 @@
 
-<em> ## tuPana </em>##
+ ## tuPana ##
 
-Nombre del Proyecto: Tu Pana
+### Nombre del Proyecto: Tu Pana
 
-Estado del Proyecto:
+### Estado del Proyecto:
 :construction: Proyecto en construcción :construction:
 
-Descripción General: Tu Pana es una aplicación innovadora diseñada para brindar apoyo emocional a las personas en momentos de necesidad. Su objetivo es ayudar a los usuarios a identificar y comprender sus emociones a través de una interfaz interactiva y accesible. La app utiliza imágenes, ejercicios de reflexión y recomendaciones personalizadas para guiar a los usuarios en su proceso emocional.
+### Descripción General:
+Tu Pana es una aplicación innovadora diseñada para brindar apoyo emocional a las personas en momentos de necesidad. Su objetivo es ayudar a los usuarios a identificar y comprender sus emociones a través de una interfaz interactiva y accesible. La app utiliza imágenes, ejercicios de reflexión y recomendaciones personalizadas para guiar a los usuarios en su proceso emocional.
 
-Características Clave:
+#### Características Clave:
 
 Identificación de Emociones:
         Un sistema de selección de emociones mediante imágenes y descripciones breves que permita a los usuarios reconocer lo que sienten.
