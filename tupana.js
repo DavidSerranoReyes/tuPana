@@ -14,15 +14,11 @@ emotions.set(
 emotions.set("felicidad", "Disfruta el momento, el presente es un regalo");
 emotions.set("optimismo", "Cada dia es una nueva oportunidad para algo bueno");
 emotions.set(
-  "encarlizado",
+  "enamorado",
   "El amor te hace crecer, disfruta cada segundo de aventura"
 );
 
 function giveAdvice(arg1) {
-  //console.log(emotions);
-
-  //console.log(emotions.keys());
-  //console.log(emotions.values());
 
   arg1 = arg1.toLowerCase();
   if (emotions.has(arg1)) {
@@ -32,7 +28,6 @@ function giveAdvice(arg1) {
   }
 }
 
-console.log(giveAdvice("Ansiedad"));
 
 function getAvailableFeelings(arg1) {
   let feelings = [];
@@ -44,19 +39,7 @@ function getAvailableFeelings(arg1) {
 }
 
 console.log(getAvailableFeelings());
-console.log(giveAdvice("encarlizado"));
-console.log(giveAdvice("tristeza"));
-console.log(giveAdvice("felicidad"));
-console.log(giveAdvice("optimismo"));
-console.log(giveAdvice("ira"));
 
-// anadir consejos validos
-//crear un repository en github
-//conectar con el repositorio local
-//guardar cambios y push repository
-//enviar el link.
-
-//https://github.com/DavidSerranoReyes/tupana
 
 function mostrarMensaje(texto) {
   document.getElementById("mensajeModal").innerText = texto;
